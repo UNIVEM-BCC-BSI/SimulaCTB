@@ -1,5 +1,6 @@
 import sqlite3
 
+
 conn = sqlite3.connect('questionario.db')
 
 cursor = conn.cursor()
@@ -18,8 +19,10 @@ CREATE TABLE IF NOT EXISTS Perguntas (
 perguntas = [
     ("A atual legislação de trânsito intitula-se:", "A) Código Nacional de Trânsito", "B) Código de Trânsito", "C) Código de Trânsito Brasileiro", "D) Código Brasileiro de Trânsito", "C"),
     ("02) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
-     "D) Machado de Assis", "B"),
-    
+     "D) Machado de Assis", "B"),("03) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
+     "D) Machado de Assis", "B"),("04) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
+     "D) Machado de Assis", "A")
+
 ]
 
 for pergunta in perguntas:
@@ -32,3 +35,28 @@ print("Banco de dados criado e perguntas inseridas com sucesso!")
 
 cursor.execute("SELECT * FROM Perguntas")
 print(cursor.fetchall())
+
+import sqlite3
+
+conn = sqlite3.connect('questionario.db')
+cursor = conn.cursor()
+
+
+
+
+id_pergunta = 1
+
+
+cursor.execute("SELECT * FROM Perguntas WHERE id=?", (id_pergunta,))
+
+
+pergunta = cursor.fetchone()
+
+
+if pergunta:
+    print("Pergunta encontrada:", pergunta)
+else:
+    print("Pergunta não encontrada.")
+
+
+conn.close()
