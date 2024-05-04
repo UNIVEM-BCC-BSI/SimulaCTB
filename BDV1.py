@@ -18,10 +18,12 @@ CREATE TABLE IF NOT EXISTS Perguntas (
 ''')
 perguntas = [
     ("A atual legislação de trânsito intitula-se:", "A) Código Nacional de Trânsito", "B) Código de Trânsito", "C) Código de Trânsito Brasileiro", "D) Código Brasileiro de Trânsito", "C"),
-    ("02) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
-     "D) Machado de Assis", "B"),("03) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
-     "D) Machado de Assis", "B"),("04) O trânsito de qualquer natureza nas vias terrestres do território nacional, abertas à circulação, rege-se pelo:'?", "A) William Shakespeare", "B) Miguel de Cervantes", "C) Jorge Luis Borges",
-     "D) Machado de Assis", "A")
+("A atual legislação de trânsito intitula-se:", "A) Código Nacional de Trânsito", "B) Código de Trânsito", "C) Código de Trânsito Brasileiro", "D) Código Brasileiro de Trânsito", "C")
+("A atual legislação de trânsito intitula-se:", "A) Código Nacional de Trânsito", "B) Código de Trânsito", "C) Código de Trânsito Brasileiro", "D) Código Brasileiro de Trânsito", "C")
+
+
+
+
 
 ]
 
